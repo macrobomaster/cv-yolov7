@@ -40,6 +40,8 @@ And craete Conda Environment
 `Conda Create -n <The Name You Like> Python3.9` 
 
 ![image](https://user-images.githubusercontent.com/56321690/202287922-1a6b9a71-49ef-4d40-b759-ec4ddd641317.png)
+### Activate Conda Environment
+Run command `Conda activate <The Name You put from previous step>` 
 
 ### pip install required packages
 Option 1 : Install yolov7 for training on CPU \
