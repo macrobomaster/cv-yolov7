@@ -2,7 +2,7 @@
 
 ## Description
 
-- integrated from yolov7 official repo https://github.com/WongKinYiu/yolov7, fixed the issue on cuda core can't run on yolov7 model. Tested on conda environment with `python3.9, pytorch=1.11.0, cudatoolkit=1.13`
+- Integrated from yolov7 official repo https://github.com/WongKinYiu/yolov7, fixed the issue on cuda core can't run on yolov7 model. Tested on conda environment with `python3.9, pytorch=1.11.0, cudatoolkit=1.13`
 
 ## Performance 
 
@@ -31,7 +31,7 @@ Advanved Installation Options : \
 
 
 ### Clone yolov7 Repo 
-Run `git clone https://github.com/FlyerJB/YOLOv7-RoboMaster.git` on your command prompt to some dir under C:/ drive to avoid Enviornment failure \
+Run `git clone https://github.com/FlyerJB/YOLOv7-RoboMaster.git` on your command prompt to some dir under C:/ drive or your OS drive to avoid Enviornment failure \
     
 ### Make Conda Environment
 Open Conda Command Prompt with Admin Right \
