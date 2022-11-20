@@ -56,6 +56,8 @@ Run `import torch` \
 Run `torch.cuda_is_available()` \
 If it returns `True`, it means CUDA is successfully install on your device with Pytorch. 
 
+## Training with CPU
+If you need to train the model with your CPU, make sure you replace the loss.py under /utils by the py file under the loss-CPU-only.zip
 
 ## Training
 
