@@ -45,10 +45,10 @@ Run command `Conda activate <The Name You put from previous step>`
 
 ### pip install required packages
 Option 1 : Install yolov7 for training on CPU \
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 Option 2 : Install yolov7 for training on RTX GPU \
-pip install -r requirement_nv_gpu.txt
+`pip install -r requirement_nv_gpu.txt`
 
 ### Validate Cuda Installation ( required for nv_gpu training )
 Run `python` or `python3` or `py` to run python \
