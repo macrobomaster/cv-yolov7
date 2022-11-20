@@ -48,7 +48,7 @@ Option 1 : Install yolov7 for training on CPU \
 `pip install -r requirements.txt`
 
 Option 2 : Install yolov7 for training on RTX GPU \
-`pip install -r requirement_nv_gpu.txt`
+`pip install -r requirement_nv_gpu.txt` \
 `pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113`
 
 ### Validate Cuda Installation ( required for nv_gpu training )
