@@ -69,6 +69,10 @@ It goes under `data\val` foler with train and label folders inside \
 It goes under `train\val` foler with train and label folders inside \
 ![image](https://user-images.githubusercontent.com/56321690/203417152-20db03aa-b29c-4b08-8320-9cd3b3df118b.png)
 
+## Download yolov7 weight
+Download yolov7 weight using link below, and put it under YOLOv7-Robomaster dir \
+[**YOLOv7**](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt)
+
 ## Training
 
 With GPU training
