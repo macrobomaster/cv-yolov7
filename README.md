@@ -54,9 +54,19 @@ Option 2 : Install yolov7 for training on RTX GPU \
 ### Validate Cuda Installation ( required for nv_gpu training )
 Run `python` or `python3` or `py` to run python \
 Run `import torch` \
-Run `torch.cuda_is_available()` \
+Run `torch.cuda.is_available()` \
 If it returns `True`, it means CUDA is successfully install on your device with Pytorch. 
 
+## Seperate Dataset
+### Validate set
+10% - 20% of the whole dataset \
+It goes under `data\val` foler with train and label folders inside \
+![image](https://user-images.githubusercontent.com/56321690/203417152-20db03aa-b29c-4b08-8320-9cd3b3df118b.png)
+
+### Validate set
+80% to 90% of the whole dataset \
+It goes under `train\val` foler with train and label folders inside \
+![image](https://user-images.githubusercontent.com/56321690/203417152-20db03aa-b29c-4b08-8320-9cd3b3df118b.png)
 
 ## Training
 
