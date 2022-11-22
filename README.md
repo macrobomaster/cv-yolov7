@@ -55,7 +55,8 @@ Option 2 : Install yolov7 for training on RTX GPU \
 Run `python` or `python3` or `py` to run python \
 Run `import torch` \
 Run `torch.cuda.is_available()` \
-If it returns `True`, it means CUDA is successfully install on your device with Pytorch. 
+If it returns `True`, it means CUDA is successfully install on your device with Pytorch. \
+Then run `exit()` to exit python
 
 ## Seperate Dataset
 ### Validate set
