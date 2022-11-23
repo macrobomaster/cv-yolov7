@@ -79,12 +79,12 @@ With GPU training
 
 ``` shell
 # train models
-python train.py --workers 1 --device 0 --batch-size 8 --epochs 50 --img 640 640 --data data/coco_custom.yaml --hyp data/hyp.scratch.custom.yaml --cfg cfg/training/yolov7-custom.yaml --name yolov7-tut3 --weights yolov7.pt  
+python train.py --workers 1 --device 0 --batch-size 8 --epochs 50 --img 640 --data data/coco_custom.yaml --hyp data/hyp.scratch.custom.yaml --cfg cfg/training/yolov7-custom.yaml --name yolov7-tut3 --weights yolov7.pt  
 ```
 With CPU training
 
 ``` shell
 # train models
-python train.py --workers 8 --device CPU --batch-size 8 --epochs 50 --img 640 640 --data data/coco_custom.yaml --hyp data/hyp.scratch.custom.yaml --cfg cfg/training/yolov7-custom.yaml --name yolov7-tut3 --weights yolov7.pt
+python train.py --workers 8 --device CPU --batch-size 8 --epochs 50 --img 640 --data data/coco_custom.yaml --hyp data/hyp.scratch.custom.yaml --cfg cfg/training/yolov7-custom.yaml --name yolov7-tut3 --weights yolov7.pt
 ```
 
