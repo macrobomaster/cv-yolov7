@@ -64,9 +64,9 @@ Then run `exit()` to exit python
 It goes under `data\val` foler with train and label folders inside \
 ![image](https://user-images.githubusercontent.com/56321690/203417152-20db03aa-b29c-4b08-8320-9cd3b3df118b.png)
 
-### Validate set
+### Train set
 80% to 90% of the whole dataset \
-It goes under `train\val` foler with train and label folders inside \
+It goes under `data\train` foler with train and label folders inside \
 ![image](https://user-images.githubusercontent.com/56321690/203417152-20db03aa-b29c-4b08-8320-9cd3b3df118b.png)
 
 ## Download yolov7 weight
