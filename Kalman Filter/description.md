@@ -13,7 +13,7 @@ For the code file:
 
   - &nbsp;The _Kalmanfilter_ is the most important function that take the previous coordinates as the input and output the predicted coordinates. To implement the prediction in our YOLO code, just import the _Kalmanfilter_ into the code file and call it. 
   - Input: current coordinates (x,y)
-  - Output: the predicted coordinates (new_x,new_y) --- note that the naming is just for understanding
+  - Output: the predicted coordinates (new_x,new_y)
 
 
   <sub>Source: pysource.com <sub>  
