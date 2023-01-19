@@ -9,12 +9,11 @@ kalman function with the YOLO, we can get much better results.
 
 # The Functions
 
-For the three different code files:
+For the code file:
 
-  - &nbsp;The _Kalmanfilter_ is the most important function that take the previous coordinates as the input and output the predicted coordinates.
-  - &nbsp;The _orange_detector_ is the function used to detect the orange appeared in the demo. 
-  Its principle is to track the obvious orange color appear in the frame and return the coordinates of it.
-  - &nbsp;The _orange_prediction_ is the main function. It takes the coordinates from _orange_detector_ to draw the solid red circle and 
-  also puts them into _Kalmanfilter_ to draw the green circle.
-  
+  - &nbsp;The _Kalmanfilter_ is the most important function that take the previous coordinates as the input and output the predicted coordinates. To implement the prediction in our YOLO code, just import the _Kalmanfilter_ into the code file and call it. 
+  - Input: current coordinates (x,y)
+  - Output: the predicted coordinates (new_x,new_y) --- note that the naming is just for understanding
+
+
   <sub>Source: pysource.com <sub>  
