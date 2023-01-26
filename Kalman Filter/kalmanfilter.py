@@ -1,6 +1,14 @@
 #https://pysource.com/2021/10/29/kalman-filter-predict-the-trajectory-of-an-object/
 import cv2
 import numpy as np
+################################################
+#function name: kalmanFilter
+#function description: Input the current coordinates(x,y), output the predicted coordinates (x,y) by calling kf.predict() as shown below
+#function call : 
+# from kalmanfilter import KalmanFilter
+# kf = KalmanFilter()
+# [predict_x, predict_y] = kf.predict(coord_x, coord_y)
+################################################
 
 
 class KalmanFilter:
