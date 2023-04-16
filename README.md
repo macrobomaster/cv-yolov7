@@ -73,6 +73,9 @@ It goes under `data\train` foler with train and label folders inside \
 Download yolov7 weight using link below, and put it under YOLOv7-Robomaster dir \
 [**YOLOv7**](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt)
 
+## Trained model
+Our own model have been up uploaded to cv-yolov7/model files
+
 ## Training
 
 With GPU training
