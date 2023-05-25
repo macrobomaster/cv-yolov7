@@ -4,7 +4,7 @@ import numpy as np
 from kalmanfilter import KalmanFilter
 
 #load model
-model = torch.hub.load('.', 'custom', path='<where your model is>', source='local')
+model = torch.hub.load('.', 'custom', path='Trained_model/cv4control_v5n.onnx', source='local')
 #capture video from camera
 cap = cv2.VideoCapture(1)
 #cameara setup
@@ -12,6 +12,14 @@ cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
 cap.set(cv2.CAP_PROP_FOURCC, 0x32595559)
 cap.set(cv2.CAP_PROP_FPS, 120)
+#capture video from camera
+# camera_id = "/dev/video0"
+# cap = cv2.VideoCapture(camera_id, cv2.CAP_V4L2)
+# cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
+# cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+# cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc(*'MJPG'))
+# cap.set(cv2.CAP_PROP_FPS, 120)
+
 kf = KalmanFilter()
 # cap = cv2.VideoCapture('')
 
