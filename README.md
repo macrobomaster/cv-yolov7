@@ -73,18 +73,22 @@ It goes under `data\train` foler with train and label folders inside \
 Download yolov7 weight using link below, and put it under YOLOv7-Robomaster dir \
 [**YOLOv7**](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt)
 
+## Trained model
+Our own model have been up uploaded to `cv-yolov7/model` files
+[**Models**](https://github.com/macrobomaster/cv-yolov7/tree/main/models)
+
 ## Training
 
 With GPU training
 
 ``` shell
 # train models
-python train.py --workers 1 --device 0 --batch-size 8 --epochs 50 --img 640 --data data/coco_custom.yaml --hyp data/hyp.scratch.custom.yaml --cfg cfg/training/yolov7-custom.yaml --name yolov7-tut3 --weights yolov7.pt  
+python train.py --workers 1 --device 0 --batch-size -1 --epochs 50 --img 640 --data data/coco_custom.yaml --hyp data/hyp.scratch.custom.yaml --cfg cfg/training/yolov7-custom.yaml --name yolov7-tut3 --weights yolov7.pt  
 ```
 With CPU training
 
 ``` shell
 # train models
-python train.py --workers 8 --device CPU --batch-size 8 --epochs 50 --img 640 --data data/coco_custom.yaml --hyp data/hyp.scratch.custom.yaml --cfg cfg/training/yolov7-custom.yaml --name yolov7-tut3 --weights yolov7.pt
+python train.py --workers 8 --device CPU --batch-size -1 --epochs 50 --img 640 --data data/coco_custom.yaml --hyp data/hyp.scratch.custom.yaml --cfg cfg/training/yolov7-custom.yaml --name yolov7-tut3 --weights yolov7.pt
 ```
 
