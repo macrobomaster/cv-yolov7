@@ -1,0 +1,148 @@
+version: '3'
+services:
+
+  general:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - ROS_DOMAIN_ID=8
+      - ROS_MASTER_URI=http://ros1-core:11311
+      - DISPLAY=:0
+      - QT_X11_NO_MITSHM=1
+      - QT_QPA_PLATFORM=xcb
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $HOME/.Xauthority:/root/.Xauthority:rw
+    stdin_open: true
+    tty: true
+    privileged: true
+    command: /./entrypoint.sh
+
+  interaction:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - ROS_DOMAIN_ID=8
+      - ROS_MASTER_URI=http://ros1-core:11311
+      - DISPLAY=:0
+      - QT_X11_NO_MITSHM=1
+      - QT_QPA_PLATFORM=xcb
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $HOME/.Xauthority:/root/.Xauthority:rw
+    stdin_open: true
+    tty: true
+    privileged: true
+    command: /./entrypoint2.sh
+
+  rviz_setup:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - ROS_DOMAIN_ID=8
+      - ROS_MASTER_URI=http://ros1-core:11311
+      - DISPLAY=:0
+      - QT_X11_NO_MITSHM=1
+      - QT_QPA_PLATFORM=xcb
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $HOME/.Xauthority:/root/.Xauthority:rw
+    stdin_open: true
+    tty: true
+    privileged: true
+    command: /./entrypoint3.sh
+
+
+  interaction2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - ROS_DOMAIN_ID=8
+      - ROS_MASTER_URI=http://ros1-core:11311
+      - DISPLAY=:0
+      - QT_X11_NO_MITSHM=1
+      - QT_QPA_PLATFORM=xcb
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $HOME/.Xauthority:/root/.Xauthority:rw
+    stdin_open: true
+    tty: true
+    privileged: true
+    command: /./entrypoint4.sh
+
+  rviz_setup2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - ROS_DOMAIN_ID=8
+      - ROS_MASTER_URI=http://ros1-core:11311
+      - DISPLAY=:0
+      - QT_X11_NO_MITSHM=1
+      - QT_QPA_PLATFORM=xcb
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $HOME/.Xauthority:/root/.Xauthority:rw
+    stdin_open: true
+    tty: true
+    privileged: true
+    command: /./entrypoint5.sh
+  
+
+  health_display:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - ROS_DOMAIN_ID=8
+      - ROS_MASTER_URI=http://ros1-core:11311
+      - DISPLAY=:0
+      - QT_X11_NO_MITSHM=1
+      - QT_QPA_PLATFORM=xcb
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $HOME/.Xauthority:/root/.Xauthority:rw
+    stdin_open: true
+    tty: true
+    privileged: true
+    command: /./entrypoint6.sh
+  health_display2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - ROS_DOMAIN_ID=8
+      - ROS_MASTER_URI=http://ros1-core:11311
+      - DISPLAY=:0
+      - QT_X11_NO_MITSHM=1
+      - QT_QPA_PLATFORM=xcb
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $HOME/.Xauthority:/root/.Xauthority:rw
+    stdin_open: true
+    tty: true
+    privileged: true
+    command: /./entrypoint7.sh
+
+
+  health_display3:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - ROS_DOMAIN_ID=8
+      - ROS_MASTER_URI=http://ros1-core:11311
+      - DISPLAY=:0
+      - QT_X11_NO_MITSHM=1
+      - QT_QPA_PLATFORM=xcb
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $HOME/.Xauthority:/root/.Xauthority:rw
+    stdin_open: true
+    tty: true
+    privileged: true
+    command: /./entrypoint8.sh
